@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="A7m-wo-GTb">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_instagram_people.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZRj-U3-zWm">
+                                <rect key="frame" x="0.0" y="120" width="320" height="448"/>
+                            </imageView>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kV-KC-5fc">
+                                <rect key="frame" x="0.0" y="120" width="320" height="448"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAT-Hb-cn3">
+                                <rect key="frame" x="45" y="468" width="230" height="50"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FX4-rR-1x3"/>
+                                    <constraint firstAttribute="width" constant="230" id="NGp-Xx-KjN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Login with instagram  &gt;">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4S-D2-Wdx"/>
+                                    <segue destination="Alm-Qi-lTS" kind="show" identifier="loginSegue" id="2Jg-nS-Kg3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_instagram.png" translatesAutoresizingMaskIntoConstraints="NO" id="56w-iz-A6i">
+                                <rect key="frame" x="68" y="35" width="185" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="s3j-Ka-TiS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.4941176471" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2kV-KC-5fc" secondAttribute="bottom" id="4o2-QQ-79W"/>
+                            <constraint firstItem="2kV-KC-5fc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="120" id="8Wl-dw-gGv"/>
+                            <constraint firstAttribute="trailing" secondItem="ZRj-U3-zWm" secondAttribute="trailing" id="BfN-yj-2Tt"/>
+                            <constraint firstItem="ZRj-U3-zWm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q8J-AW-wl6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZRj-U3-zWm" secondAttribute="bottom" id="XJi-fR-HzJ"/>
+                            <constraint firstItem="ZRj-U3-zWm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="120" id="YTL-ad-Eji"/>
+                            <constraint firstItem="56w-iz-A6i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="d4w-Fm-ODm"/>
+                            <constraint firstItem="sAT-Hb-cn3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oya-hO-gRE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sAT-Hb-cn3" secondAttribute="bottom" constant="50" id="qBI-Wc-jA8"/>
+                            <constraint firstAttribute="trailing" secondItem="2kV-KC-5fc" secondAttribute="trailing" id="rij-ae-yhH"/>
+                            <constraint firstItem="56w-iz-A6i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u6K-qg-jLp"/>
+                            <constraint firstItem="2kV-KC-5fc" firstAttribute="top" secondItem="56w-iz-A6i" secondAttribute="bottom" constant="35" id="wtR-S2-2ld"/>
+                            <constraint firstItem="2kV-KC-5fc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yvy-fw-yJf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tyW-af-577"/>
+                    <connections>
+                        <outlet property="loginBt" destination="sAT-Hb-cn3" id="NEn-fr-3BU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998" y="22"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="q8M-RR-oK9">
+            <objects>
+                <viewController id="Alm-Qi-lTS" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Ry-tb-0pY"/>
+                        <viewControllerLayoutGuide type="bottom" id="kM2-Z0-woP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fba-nJ-KcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nQ-95-MOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903" y="22"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jyo-ew-Q9N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="A7m-wo-GTb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qii-Ze-pMA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="byE-xS-zrp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOi-BI-xQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110.625" y="22.183098591549296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_instagram.png" width="678" height="195"/>
+        <image name="bg_instagram_people.png" width="773" height="893"/>
+    </resources>
+</document>
